@@ -27,7 +27,8 @@ input, button{
   background-color: white;
 }
 input{
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   padding: 1rem 1rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -196,4 +197,32 @@ button:hover{
   font-size: 1rem;
   margin-right: 1.7rem;
   flex-direction: row-reverse;
+}
+
+@media(max-width:415px) {
+  .containerHeader, .containerWeatherInfo {
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .containerModal{
+    width: 380px;
+  }
+
+  .containerHeader > h1 {
+    padding-bottom: 0rem;
+  }
+
+  form{
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  input{
+    width: 225px;
+  }
+
+  .containerModal{
+    margin: 2rem 0;
+  }
 }
