@@ -25,8 +25,9 @@ export const Modal = () => {
 
     const weatherCodeMap = {
         1000: "Céu Limpo",
-        1100: "Predominantemente Limpo",
-        1101: "Predominantemente Nublado",
+        1001: "Nublado",
+        1100: "Parcialmente Limpo",
+        1101: "Parcialmente Nublado",
         1102: "Predominantemente Nublado",
         2000: "Neblina",
         4000: "Garoa",
@@ -51,6 +52,7 @@ export const Modal = () => {
 
                 <h2>
                     {cityData?.timelines.hourly[time].values.temperature.toFixed(0)}°C {weatherCodeMap[cityData?.timelines.hourly[time].values.weatherCode]}
+                {console.log(cityData?.timelines.hourly[time].values.weatherCode)}
                 </h2>
 
                 <div className="boxClimate">
