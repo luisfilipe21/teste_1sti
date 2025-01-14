@@ -1,0 +1,199 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+/* parte do modal */
+.containerHeader{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.containerHeader >h1{
+  padding-bottom: 1rem;
+}
+
+form{
+  display: flex;
+  align-items: center;
+}
+
+input, button{
+  border: none;
+  background-color: white;
+}
+input{
+  width: 500px;
+  padding: 1rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+button{
+  padding: 0.5rem;
+}
+
+button:hover{
+  background-color: rgb(231, 229, 229);
+  cursor: pointer;
+}
+
+/* modal */
+.containerModal{
+  width: 100%;
+  background-color: white;
+  color: rgb(94, 91, 91);
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 2rem 1rem;
+}
+
+.containerModal h2{
+  text-align: left;
+  margin: 0 2rem;
+  font-size: 2.4rem;
+}
+
+.boxRegion{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.boxRegion > p{
+  font-weight: 600;
+}
+
+.boxRegion span{
+  color: #FF8100ff;
+  font-weight: 700;
+  cursor: pointer
+}
+
+.boxClimate{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+
+}
+
+.boxClimate > hr{
+  width: 90%;
+  border-color: #FF8100ff;
+  border-width: 0.2px;
+}
+
+.boxInfoMacro{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-height: 150px;
+  margin: 0 2rem;
+}
+
+.boxInfoMacro p:nth-child(2){
+  margin-left: 0.5rem;
+}
+
+.boxInfoMacro p>span{
+  font-weight: 600;
+}
+
+
+.boxTemperature{
+  display: flex;
+  flex-direction: row;
+}
+
+.boxTemperature p{
+  margin-left: 0.5rem;
+  font-weight: 600;
+}
+
+
+/* Próximos dias */
+/* hr:nth-child(2){ 
+  width: 100%;
+  border-color: #FFF;
+} */
+/* Próximos dias */
+
+.containerNextDays{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 90%;
+  max-height: 90px;
+  box-sizing: border-box;
+}
+
+.boxNextDays{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.boxNextDays h3{
+  margin: 0.5rem 0;
+}
+
+.boxTemp{
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.boxTemp p{
+  margin: 0 0 1rem 0;
+  color: #FF8100ff;
+  font-weight: 600;
+}
+
+  /* parte das capitais */
+  .containerWeatherInfo{
+    padding: 1rem 0.5rem 3rem 0.5rem;
+  }
+
+.containerWeatherInfo > h2{
+  display: flex;
+  justify-content: flex-start;
+  margin: 1rem 0 0 0;
+  font-size: 3rem;
+}
+
+.containerBoxFixed, .capitalsBox{
+  display: flex;
+  color: black;
+  align-items: center;
+}
+
+.containerBoxFixed > h3 {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-right: 1rem;
+ 
+
+}
+
+.capitalsBox{
+  max-height: 35px;
+}
+
+.capitalsBox > h4 {
+  font-size: 1rem;
+  margin-right: 1.7rem;
+  flex-direction: row-reverse;
+}
