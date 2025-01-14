@@ -105,8 +105,13 @@ button:hover{
   margin-left: 0.5rem;
 }
 
+.boxInfoMacro p {
+  font-size: 1rem;
+}
+
 .boxInfoMacro p>span{
   font-weight: 600;
+  font-size: 1rem;
 }
 
 
@@ -120,12 +125,6 @@ button:hover{
   font-weight: 600;
 }
 
-
-/* Próximos dias */
-/* hr:nth-child(2){ 
-  width: 100%;
-  border-color: #FFF;
-} */
 /* Próximos dias */
 
 .containerNextDays{
@@ -223,5 +222,9 @@ button:hover{
 
   .containerModal{
     margin: 2rem 0;
+  }
+
+  .boxInfoMacro p, .boxInfoMacro p>span {
+    font-size: 0.9rem;
   }
 }
