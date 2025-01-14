@@ -24,20 +24,32 @@ export const Modal = () => {
     }, [time])
 
     const weatherCodeMap = {
-        1000: "Céu Limpo",
+        1000: "Céu limpo",
         1001: "Nublado",
-        1100: "Parcialmente Limpo",
-        1101: "Parcialmente Nublado",
-        1102: "Predominantemente Nublado",
-        2000: "Neblina",
+        1100: "Predominantemente limpo",
+        1101: "Parcialmente nublado",
+        1102: "Predominantemente nublado",
+        2000: "Nevoeiro",
+        2100: "Nevoeiro leve",
+        3000: "Vento",
+        3001: "Vento brando",
+        3002: "Vento forte",
         4000: "Garoa",
         4001: "Chuva",
+        4200: "Chuva leve",
+        4201: "Chuva forte",
         5000: "Neve",
         5001: "Flocos de neve",
         5100: "Neve leve",
-        6000: "Garoa Congelante",
-        6001: "Chuva Congelante",
-        6200: "Chuva Congelante Leve",
+        5101: "Neve pesada",
+        6000: "Garoa congelante",
+        6001: "Chuva congelante",
+        6200: "Chuva congelante leve",
+        6201: "Chuva congelante forte",
+        7000: "Granizo",
+        7101: "Granizo pesado",
+        7102: "Granizo leve",
+        8000: "Tempestade",
     };
 
     return (
@@ -52,7 +64,7 @@ export const Modal = () => {
 
                 <h2>
                     {cityData?.timelines.hourly[time].values.temperature.toFixed(0)}°C {weatherCodeMap[cityData?.timelines.hourly[time].values.weatherCode]}
-                {console.log(cityData?.timelines.hourly[time].values.weatherCode)}
+                    {console.log(cityData?.timelines.hourly[time].values.weatherCode)}
                 </h2>
 
                 <div className="boxClimate">
